@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR</title>
+</head>
+<body>
+    <a href="/">Home Page</a>
+    <br/><br/><br/>
+    Request your favorite podcast
+    <br/>
+    <form action="/Podcast_Request/" method="post">
+        {% csrf_token %}
+        Podcast Topic:
+        <input type="text" name="ptopic"/>
+        <br/><br/>
+        Podcast Description
+        <br/><br/>
+        <textarea cols="50" rows="10" name="pdisc"></textarea><br/>
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>
