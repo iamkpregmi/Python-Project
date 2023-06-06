@@ -60,5 +60,6 @@ print("")
 print("Score Board")
 print("*******************")
 print("Wins:      ", playerScore)
+
 print("Losses     ",opponentScore)
 print("*******************")
